@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alexvasilkov.gestures.sample">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".SampleApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".base.StartActivity"
+            android:theme="@style/AppTheme.Start" />
+
+        <activity-alias
+            android:name=".ui.base.MainActivity"
+            android:targetActivity=".base.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:name=".demo.DemoActivity"
+            android:theme="@style/AppTheme.Full.NoTitle" />
+
+        <activity
+            android:name=".ex.ExamplesActivity"
+            android:label="@string/examples_title" />
+
+        <activity android:name=".ex.image.viewer.ImageViewerActivity" />
+
+        <activity android:name=".ex.image.control.ImageControlActivity" />
+
+        <activity android:name=".ex.image.crop.ImageCropActivity" />
+
+        <activity android:name=".ex.image.pager.ViewPagerActivity" />
+
+        <activity android:name=".ex.other.markers.ImageMarkersActivity" />
+
+        <activity android:name=".ex.animations.ImageAnimationActivity" />
+
+        <activity android:name=".ex.animations.cross.ImageCrossAnimationActivity" />
+
+        <activity
+            android:name=".ex.animations.cross.FullImageActivity"
+            android:theme="@style/AppTheme.Transparent" />
+
+        <activity android:name=".ex.animations.RoundImageAnimationActivity" />
+
+        <activity android:name=".ex.transitions.recycler.RecyclerToPagerActivity" />
+
+        <activity android:name=".ex.transitions.complex.ListAnyToAllActivity" />
+
+        <activity android:name=".ex.transitions.complex.ListAnyToAnyActivity" />
+
+        <activity android:name=".ex.layout.viewer.LayoutViewerActivity" />
+
+        <activity android:name=".ex.layout.pager.LayoutsInPagerActivity" />
+
+        <activity android:name=".ex.other.text.CustomViewActivity" />
+
+        <activity android:name=".ex.other.scene.SceneActivity" />
+
+    </application>
+
+</manifest>

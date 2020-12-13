@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="paintings_authors">
+        <item>Vincent van Gogh</item>
+        <item>Vincent van Gogh</item>
+        <item>Vincent van Gogh</item>
+        <item>Vincent van Gogh</item>
+        <item>Vincent van Gogh</item>
+    </string-array>
+
+    <string-array name="paintings_titles">
+        <item>Almond Blossom</item>
+        <item>Peach Tree in Bloom</item>
+        <item>Terrace in the Luxembourg Garden</item>
+        <item>Entrance to the Public Garden in Arles</item>
+        <item>Peasant Woman Binding Sheaves</item>
+    </string-array>
+
+    <array name="paintings_images">
+        <item>@drawable/painting_01</item>
+        <item>@drawable/painting_02</item>
+        <item>@drawable/painting_03</item>
+        <item>@drawable/painting_04</item>
+        <item>@drawable/painting_05</item>
+    </array>
+
+    <array name="paintings_thumbs">
+        <item>@drawable/painting_thumb_01</item>
+        <item>@drawable/painting_thumb_02</item>
+        <item>@drawable/painting_thumb_03</item>
+        <item>@drawable/painting_thumb_04</item>
+        <item>@drawable/painting_thumb_05</item>
+    </array>
+
+    <array name="paintings_links">
+        <item>https://www.wikiart.org/en/vincent-van-gogh/branches-with-almond-blossom-1890</item>
+        <item>https://www.wikiart.org/en/vincent-van-gogh/peach-tree-in-bloom-in-memory-of-mauve-1888</item>
+        <item>https://www.wikiart.org/en/vincent-van-gogh/terrace-in-the-luxembourg-garden-1886</item>
+        <item>https://www.wikiart.org/en/vincent-van-gogh/entrance-to-the-public-garden-in-arles-1888</item>
+        <item>https://www.wikiart.org/en/vincent-van-gogh/peasant-woman-binding-sheaves-after-millet-1889</item>
+    </array>
+
+</resources>

@@ -1,0 +1,22 @@
+plugins {
+    id 'com.android.library'
+}
+
+ext.version = '2.7.1'
+ext.name = 'GestureViews'
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 30
+        versionName project.ext.version
+    }
+}
+
+dependencies {
+    compileOnly 'androidx.annotation:annotation:1.1.0'
+    compileOnly 'androidx.viewpager:viewpager:1.0.0'
+    compileOnly 'androidx.recyclerview:recyclerview:1.1.0'
+}

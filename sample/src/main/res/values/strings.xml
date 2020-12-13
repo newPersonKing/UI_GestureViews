@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" translatable="false">GestureViews</string>
+
+    <string name="start_demo">Demo</string>
+    <string name="start_examples">@string/examples_title</string>
+
+    <string name="demo_headline">Landscapes</string>
+    <string name="demo_subhead">by Flickr</string>
+    <string name="demo_reload_photos">Load photos</string>
+    <string name="demo_loading_photos">Loading photos…</string>
+    <string name="demo_photo_by">by</string>
+
+    <string name="examples_title">Examples</string>
+
+    <string name="example_group_image">Image</string>
+    <string name="example_image_viewer">Image viewer</string>
+    <string name="example_image_state_control">Image state control</string>
+    <string name="example_image_cropping">Image cropping</string>
+    <string name="example_images_in_pager">Images in pager</string>
+
+    <string name="example_group_image_animations">Image animations</string>
+    <string name="example_image_animation">Image animation</string>
+    <string name="example_image_animation_cross">Image animation (cross-activity)</string>
+    <string name="example_image_animation_cross_target">New activity</string>
+    <string name="example_image_animation_circular">Circular image animation</string>
+
+    <string name="example_group_list_transitions">List transitions</string>
+    <string name="example_list_transitions_1_N">List transitions: ONE to ALL</string>
+    <string name="example_list_transitions_n_N">List transitions: ANY to ALL</string>
+    <string name="example_list_transitions_n_n">List transitions: ANY to ANY</string>
+
+    <string name="example_group_layout">Layout</string>
+    <string name="example_layout_viewer">Layout viewer</string>
+    <string name="example_layouts_in_pager">Layouts in pager</string>
+
+    <string name="example_group_other">Extras</string>
+    <string name="example_other_custom">Custom text view</string>
+    <string name="example_other_markers">Markers overlay</string>
+    <string name="example_other_objects">Objects control</string>
+
+    <string name="animate_changes">Animate</string>
+    <string name="expand_image">Tap image to expand:</string>
+    <string name="button_wiki_art">WikiArt</string>
+
+    <string name="menu_enable_pan">Pan</string>
+    <string name="menu_enable_zoom">Zoom</string>
+    <string name="menu_enable_rotation">Rotation</string>
+    <string name="menu_restrict_rotation">Restrict rotation</string>
+    <string name="menu_enable_overscroll">Overscroll</string>
+    <string name="menu_enable_overzoom">Overzoom</string>
+    <string name="menu_fill_viewport">Fill viewport</string>
+    <string name="menu_fit_method">Fit method</string>
+    <string name="menu_bounds_type">Bounds type</string>
+    <string name="menu_gravity">Gravity</string>
+    <string name="menu_enable_slow">Slow animations</string>
+    <string name="menu_enable_overlay">Debug overlay</string>
+
+    <string name="menu_info">Info</string>
+    <string name="menu_crop">Crop</string>
+
+    <string name="random_title">Efficitur tincidunt neque</string>
+    <string name="random_text">
+        Lorem ipsum dolor sit amet, graeco tritani te mei, facilisis prodesset id est. Magna labore
+        quo ne. Ne noster mentitum delicatissimi his. Id nam summo munere luptatum, an dicunt
+        cotidieque per. Aeque conceptam ea eos, an wisi ancillae deserunt vim, reque virtute
+        fastidii cu sed. Sumo deleniti iracundia cum eu, vel iudico sententiae suscipiantur ad. Id
+        iudico albucius voluptatibus duo.
+        \n\nIn per sale delenit torquatos, id has mundi iudicabit intellegam, vim quis eros brute
+        eu. In modo tempor duo, an ius electram honestatis, est case nominati accommodare ea. Ad
+        sint atqui definitiones has, cum insolens oportere id, has no inani veniam. Scripta verterem
+        no nec, ex qui putant facilisis.
+        \n\nSuspendisse et dolor in quam ultrices ornare. Aliquam enim orci, tincidunt eu nulla
+        eget, tempus auctor neque. Cras ut sodales tellus. In gravida nibh justo, ac consequat
+        ligula fermentum sit amet. Sed vitae fringilla nulla, posuere viverra orci. Fusce quis
+        placerat ex, efficitur tincidunt neque. Donec eros ante, porttitor at iaculis eu, posuere
+        nec augue. Suspendisse viverra pretium ante, sed sagittis erat luctus ut. In imperdiet
+        turpis viverra porta euismod.
+        \n\nMorbi ultricies imperdiet turpis, eu commodo nisl fringilla quis. Nam elit erat, dictum
+        non cursus quis, sodales at dolor. Mauris ornare sed magna a maximus.
+    </string>
+    <string name="random_button">Ligula fermentum sit amet</string>
+
+</resources>
