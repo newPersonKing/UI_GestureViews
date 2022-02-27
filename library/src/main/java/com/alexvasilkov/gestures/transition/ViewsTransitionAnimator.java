@@ -298,6 +298,8 @@ public class ViewsTransitionAnimator<ID> extends ViewsCoordinator<ID> {
         if (getToView() == null) {
             throw new NullPointerException();
         }
+
+        // ViewPositionAnimator
         return getToView().getPositionAnimator();
     }
 

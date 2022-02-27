@@ -37,14 +37,21 @@ public class ImageAnimationActivity extends BaseSettingsActivity {
         fullBackground = findViewById(R.id.single_image_back);
 
         // Loading image
+        // PAINTING_ID 固定值2
+        // painting 保存了 几张备用的图片id
         painting = Painting.list(getResources())[PAINTING_ID];
+        // 加载原图到 image
         GlideHelper.loadThumb(image, painting.thumbId);
 
         // We will expand image on click
         image.setOnClickListener(view -> openFullImage());
 
         // Initializing image animator
+        // 1 from  返回GestureTransitions 他持有一个变量  animator 类型是 ViewsTransitionAnimator
+        // 2 from 和 into 分别初始化  fromListener  toListener
+        // 3 因为 这俩listener 都是 RequestListener 所以又调用了 RequestListener.initAnimator(ViewsTransitionAnimator) 所以这俩listener 持有ViewsTransitionAnimator
         animator = GestureTransitions.from(image).into(fullImage);
+        // 注册一个 PositionUpdateListener 保存在listeners 数组中
         animator.addPositionUpdateListener(this::applyImageAnimationState);
     }
 
@@ -74,6 +81,7 @@ public class ImageAnimationActivity extends BaseSettingsActivity {
         fullImage.getController().resetState();
     }
 
+    // 点击图片触发
     private void openFullImage() {
         // Setting image drawable from 'from' view to 'to' to prevent flickering
         if (fullImage.getDrawable() == null) {
@@ -81,10 +89,17 @@ public class ImageAnimationActivity extends BaseSettingsActivity {
         }
 
         // Updating gesture image settings
+        // 初始化fullImage 的一些属性
         getSettingsController().apply(fullImage);
         // Resetting to initial image state
+        // getController 返回的是  GestureControllerForPager
+        // resetState 重置状态
         fullImage.getController().resetState();
 
+        // 1 给 enterWithAnimation 设置为true
+        // 2 分别调用 fromListener  与 toListener 的onRequestView 给 animator 设置 fromView 与 toView
+        // 3 并且会调用 notifyWhenReady-》isReady 只有 fromView 与 toView 都设置完之后 isReady才会返回true
+        // 4 isReady 返回true 调用onViewsReady  主要实现在 ViewsTransitionAnimator
         animator.enterSingle(true);
         GlideHelper.loadFull(fullImage, painting.imageId, painting.thumbId);
     }

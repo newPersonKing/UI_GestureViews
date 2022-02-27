@@ -5,6 +5,7 @@ import android.view.View;
 
 import androidx.annotation.NonNull;
 
+// FRAME_TIME 为周期 执行 onStep onStep交由子类实现
 public abstract class AnimationEngine implements Runnable {
 
     private static final long FRAME_TIME = 10L;

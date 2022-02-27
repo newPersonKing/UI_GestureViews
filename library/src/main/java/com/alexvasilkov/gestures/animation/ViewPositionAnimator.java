@@ -130,12 +130,16 @@ public class ViewPositionAnimator {
         }
 
         View toView = (View) to;
+        // to 实现对应的接口 toClipView 与 toClipBounds 就不是null
         toClipView = to instanceof ClipView ? (ClipView) to : null;
         toClipBounds = to instanceof ClipBounds ? (ClipBounds) to : null;
+        // 周期执行 onStep
         animationEngine = new LocalAnimationEngine(toView);
 
+        // windowRect 存储屏幕宽高
         getDisplaySize(toView.getContext(), windowRect);
 
+        // GestureControllerForPager
         toController = to.getController();
         toController.addOnStateChangeListener(new GestureController.OnStateChangeListener() {
             @Override
